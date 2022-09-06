@@ -8,18 +8,7 @@ import '../api/product/controller/product_controller.dart';
 import '../api/product/service/service_product.dart';
 
 // Configure routes.
-final _router = Router()
-  ..get('/', _rootHandler)
-  ..get('/echo/<message>', _echoHandler);
-
-Response _rootHandler(Request req) {
-  return Response.ok('Hello, World!\n');
-}
-
-Response _echoHandler(Request request) {
-  final message = request.params['message'];
-  return Response.ok('$message\n');
-}
+final _router = Router();
 
 void main(List<String> args) async {
   final ServiceProductImpl serviceProductImpl = ServiceProductImpl();
