@@ -18,9 +18,20 @@ class ReasonsController {
         if (stepSlug == 'way') return way();
         if (stepSlug == 'arrived') return arrived();
         if (stepSlug == 'listing') return listing();
-        if (stepSlug == 'justifications') return justifications();
       }
       return routeForbidden();
+    } on Exception catch (e) {
+      return Response(
+        500,
+        body: jsonEncode({'error': e}),
+        headers: {HttpHeaders.contentTypeHeader: "application/json"},
+      );
+    }
+  }
+
+  FutureOr<Response> getJustifications(Request request) async {
+    try {
+      return justifications();
     } on Exception catch (e) {
       return Response(
         500,
@@ -58,7 +69,7 @@ class ReasonsController {
     final List<dynamic> justifications =
         serviceReasonsImpl.getReasonsJustifications();
     return Response.ok(
-      jsonEncode({'justifications': justifications}),
+      jsonEncode({'result': justifications}),
       headers: {HttpHeaders.contentTypeHeader: "application/json"},
     );
   }

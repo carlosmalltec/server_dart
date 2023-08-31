@@ -21,6 +21,7 @@ void main(List<String> args) async {
 
 ////reasons/{stepSlug}
   _router.get('/reasons/<stepSlug>', reasonsController.reasons);
+  _router.get('/justifications', reasonsController.getJustifications);
 
   // _router.get('/products', (request) => productController.allProducts(request));
   // _router.get('/products', productController.allProducts);
