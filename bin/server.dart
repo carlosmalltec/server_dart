@@ -19,7 +19,8 @@ void main(List<String> args) async {
   /// reasons/{stepSlug}
   _router.get('/reasons/<stepSlug>', reasonsController.reasons);
   _router.get('/justifications', reasonsController.getJustifications);
-  _router.get('/collects/<driverId>', collectController.getListCollectsController);
+  _router.get(
+      '/collects/<driverId>', collectController.getListCollectsController);
 
   // Use any available host or container IP (usually `0.0.0.0`).
   final ip = InternetAddress.anyIPv4;
@@ -28,7 +29,9 @@ void main(List<String> args) async {
   final handler = Pipeline().addMiddleware(logRequests()).addHandler(_router);
 
   // For running in containers, we respect the PORT environment variable.
-  final port = int.parse(Platform.environment['PORT'] ?? '8080');
+  // 'http://192.168.18.14:8090'; => 14 dinamico entao muda
+  // terminal => ifconfig => procurar por broadcast 192.168.18.255 => inet 192.168.18.14 netmask 0xffffff00 broadcast 192.168.18.255
+  final port = int.parse(Platform.environment['PORT'] ?? '8090');
   final server = await serve(handler, ip, port);
   print('Server listening on port ${server.port}');
 }
