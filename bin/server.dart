@@ -5,8 +5,10 @@ import 'package:shelf/shelf_io.dart';
 import 'package:shelf_router/shelf_router.dart';
 
 import '../api/product/controller/collect_controller.dart';
+import '../api/product/controller/delivery_controller.dart';
 import '../api/product/controller/reasons_controller.dart';
 import '../api/product/service/service_collect.dart';
+import '../api/product/service/service_delivery.dart';
 import '../api/product/service/service_reasons.dart';
 
 // Configure routes.
@@ -15,12 +17,15 @@ final _router = Router();
 void main(List<String> args) async {
   final reasonsController = ReasonsController(ServiceReasonsImpl());
   final collectController = CollectController(ServiceCollectImpl());
+  final deliveryController = DeliveryController(ServiceDeliveryImpl());
 
   /// reasons/{stepSlug}
   _router.get('/reasons/<stepSlug>', reasonsController.reasons);
   _router.get('/justifications', reasonsController.getJustifications);
   _router.get(
       '/collects/<driverId>', collectController.getListCollectsController);
+  _router.get(
+      '/deliveries/<driverId>', deliveryController.getListDeliveryController);
 
   // Use any available host or container IP (usually `0.0.0.0`).
   final ip = InternetAddress.anyIPv4;

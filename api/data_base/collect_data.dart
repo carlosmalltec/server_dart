@@ -1,9 +1,9 @@
 final List<dynamic> dataCollects = [
   {
     "id": 1,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "51caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 1,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -46,9 +46,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 2,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "52caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 2,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -91,9 +91,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 3,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "53caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 3,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -136,9 +136,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 4,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "54caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 4,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -183,7 +183,7 @@ final List<dynamic> dataCollects = [
     "id": 5,
     "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 5,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -226,9 +226,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 6,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "56caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 6,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -271,9 +271,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 7,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "57caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 7,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -316,9 +316,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 8,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "58caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 8,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -361,9 +361,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 9,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "59caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 9,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",
@@ -406,9 +406,9 @@ final List<dynamic> dataCollects = [
   },
   {
     "id": 10,
-    "number": "55caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
+    "number": "60caa8e4-32d0-3aa2-a7e5-8d17b556c1be",
     "sequence": 10,
-    "status": {"name": "for-collect", "slug": "order-status-dolorum"},
+    "status": {"name": "for-collect", "slug": "pending"},
     "packages": [
       {
         "uuid": "559aa7e4-32d0-3aa2-a7e5-8d173f3ac1be",

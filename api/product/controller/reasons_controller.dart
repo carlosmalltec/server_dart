@@ -44,7 +44,7 @@ class ReasonsController {
   FutureOr<Response> listing() {
     final List<dynamic> listing = serviceReasonsImpl.getReasonsListing();
     return Response.ok(
-      jsonEncode({'reasons': listing}),
+      jsonEncode({'result': listing}),
       headers: {HttpHeaders.contentTypeHeader: "application/json"},
     );
   }
@@ -52,7 +52,7 @@ class ReasonsController {
   FutureOr<Response> way() {
     final List<dynamic> way = serviceReasonsImpl.getReasonsWay();
     return Response.ok(
-      jsonEncode({'reasons': way}),
+      jsonEncode({'result': way}),
       headers: {HttpHeaders.contentTypeHeader: "application/json"},
     );
   }
@@ -60,7 +60,7 @@ class ReasonsController {
   FutureOr<Response> arrived() {
     final List<dynamic> arrived = serviceReasonsImpl.getReasonsArrived();
     return Response.ok(
-      jsonEncode({'reasons': arrived}),
+      jsonEncode({'result': arrived}),
       headers: {HttpHeaders.contentTypeHeader: "application/json"},
     );
   }
