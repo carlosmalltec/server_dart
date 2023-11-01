@@ -3,7 +3,7 @@ final List<dynamic> dataDelivery = [
     "id": 84793,
     "number": "80a2834a-d9f5-49cc-b703-dff647bed26c",
     "sequence": 1,
-    "info": {"invoice": null, "check_location": false},
+    "info": {"invoice": "1234", "check_location": false},
     "status": {
       "name": "Em rota para entrega",
       "slug": "em-rota-para-entrega",
@@ -23,10 +23,14 @@ final List<dynamic> dataDelivery = [
         "status": {"name": "Pending", "slug": "pending"}
       }
     ],
-    "route": null,
+    "route": {
+      "name": "Coleta teste 10",
+      "estimated_arrival_date": "2023-11-01 12:45:12"
+    },
     "destiny": {
       "id": 84793,
       "name": "VNDA - São Paulo",
+      "phone": "119447283930",
       "address": "Av Tamboré",
       "number": "1180",
       "complement": "Modulo A2",
